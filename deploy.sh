@@ -4,7 +4,7 @@ set -e
 
 pnpm run docs:build
 
-cd docs/.vitepress/dist
+cd ./.vitepress/dist
 
 git init
 git add -A
