@@ -6,16 +6,20 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "docs:deploy": "bash ./deploy.sh"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@algolia/client-search": "^4.14.3",
+    "escape-html": "^1.0.3",
+    "markdown-it-container": "^3.0.0",
+    "prismjs": "^1.29.0",
     "vitepress": "1.0.0-alpha.43"
   },
   "dependencies": {
-    "seven-bit-ui": "^1.0.11"
+    "seven-bit-ui": "^1.0.15"
   }
 }

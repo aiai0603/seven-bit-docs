@@ -13,17 +13,17 @@ V 1.0.9
 ## NPM
 
 ```shell
-npm install ls-ui --save
+npm install seven-bit-ui --save
 ```
 
 ## YARN
 
 ```shell
-yarn add ls-ui
+yarn add seven-bit-ui
 ```
 
 ## PNPM
 
 ```shell
-pnpm install ls-ui
+pnpm install seven-bit-ui
 ```

@@ -1,23 +1,23 @@
 {
-  "hash": "43dbc20c",
-  "browserHash": "397d6e62",
+  "hash": "8076aef7",
+  "browserHash": "e4cc45a6",
   "optimized": {
     "vue": {
-      "src": "../../../../node_modules/.pnpm/vue@3.2.45/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "24e21d4c",
+      "fileHash": "9d09162e",
       "needsInterop": false
     },
     "seven-bit-ui": {
-      "src": "../../../../node_modules/.pnpm/seven-bit-ui@1.0.11/node_modules/seven-bit-ui/es/index.js",
+      "src": "../../../../node_modules/.pnpm/seven-bit-ui@1.0.15/node_modules/seven-bit-ui/es/index.js",
       "file": "seven-bit-ui.js",
-      "fileHash": "dd480097",
+      "fileHash": "499d3c9e",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-GMDR4EMF": {
-      "file": "chunk-GMDR4EMF.js"
+    "chunk-LZPJ5JBW": {
+      "file": "chunk-LZPJ5JBW.js"
     }
   }
 }
