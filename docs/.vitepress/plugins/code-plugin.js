@@ -8,7 +8,7 @@ function wrap(code, lang) {
   if (lang === 'text') {
     code = escapeHtml(code)
   }
-  return `<pre v-pre style="margin: 0;"><code>${code}</code></pre>`
+  return `<pre v-pre style="margin: 0; white-space: pre-wrap;"><code>${code}</code></pre>`
 }
 // 语法高亮
 const highlight = (str, lang) => {
@@ -51,8 +51,7 @@ export const markdownConfig = (md) => {
         let source = fs.readFileSync(filePath, 'utf-8');
         if (!source)
           throw new Error(`Incorrect source file: ${sourceFile}`);
-        source = highlight(source, 'vue').replace(/margin: 0;/, "margin: 0; white-space: pre-wrap;");
-        return `<code-box source="${encodeURIComponent(source)}" raw-source="${encodeURIComponent(source)}" path="${filePath}" >`;
+        return `<code-box source="${encodeURIComponent(highlight(source, 'vue'))}" raw-source="${encodeURIComponent(source)}" path="${sourceFile}" >`;
       }
       return '</code-box>';
     },

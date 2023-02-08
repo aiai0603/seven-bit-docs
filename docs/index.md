@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /guide/install
+      link: /guide/start
     - theme: alt
       text: 在 Github 上查看
       link: https://github.com/aiai0603/ls-ui
@@ -30,3 +30,27 @@ features:
     title: 特性
     details: 开箱即用的高质量 Vue 组件，提炼自企业级中后台产品的交互语言和视觉风格，直接支持按需引入无需配置任何插件
 ---
+
+<script setup>
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamMembers
+} from 'vitepress/theme';
+import members from './.vitepress/utils/member.js';
+
+</script>
+
+<VPTeamPage>
+  <VPTeamPageTitle>
+    <template #title>
+      Seven 团队人员介绍
+    </template>
+    <template #lead>
+      Seven-Bit-UI 的开发是由 Seven 团队开发，团队成员介绍如下
+    </template>
+  </VPTeamPageTitle>
+  <VPTeamMembers
+    :members="members"
+  />
+</VPTeamPage>

@@ -20,6 +20,7 @@
     "vitepress": "1.0.0-alpha.45"
   },
   "dependencies": {
+    "ant-design-vue": "^3.2.15",
     "seven-bit-ui": "^1.0.15"
   }
 }
