@@ -40,13 +40,18 @@
       </button>
     </div>
     <collapse-transition>
-      <div v-show="open" :class="{ sourceCode: true, open: open }" v-html="source"></div>
+      <div
+        v-show="open"
+        :class="{ sourceCode: true, open: open }"
+        v-html="source"
+      ></div>
     </collapse-transition>
   </section>
 </template>
 
 <script setup>
 import { ref, defineAsyncComponent, computed } from "vue";
+const modules = import.meta.glob("../examples/**/*.vue");
 const props = defineProps({
   source: {
     type: String,
@@ -67,9 +72,8 @@ const tip = computed(() => `${open.value ? "收起" : "展开"}代码`);
 let copyTip = ref("复制代码");
 const decode = (str) => decodeURIComponent(str);
 const source = decode(props.source);
-const component = defineAsyncComponent(() =>
-  import(props.path /* @vite-ignore */)
-);
+// console.log(modules, `../examples/${props.path}`, modules[`../examples/${props.path}.vue`]);
+const component = props.path ? defineAsyncComponent(modules[`../examples/${props.path}`]) : null;
 
 const copy = () => {
   navigator.clipboard.writeText(decode(props.rawSource));
@@ -100,7 +104,7 @@ export default {
   --btn-open-border-color: 247, 248, 250;
   --btn-color: 78, 89, 107;
   --btn-open-color: 247, 248, 250;
-  --source-code-background-color:  242, 243, 245;
+  --source-code-background-color: 242, 243, 245;
 }
 
 html.dark .codeBox {
@@ -111,7 +115,7 @@ html.dark .codeBox {
   --btn-open-border-color: 23, 23, 26;
   --btn-color: 255, 255, 255, 0.7;
   --btn-open-color: 23, 23, 26;
-  --source-code-background-color:  46, 46, 48;
+  --source-code-background-color: 46, 46, 48;
 }
 
 .container {
@@ -200,7 +204,7 @@ html.dark .codeBox {
   background-color: rgb(var(--source-code-background-color));
   border-radius: 4px;
   overflow: hidden;
-  max-height: 600px
+  max-height: 600px;
 }
 
 .sourceCode.open {

@@ -7,6 +7,7 @@
   --vp-button-brand-hover-border: var(--vp-c-brand-lighter);
   --vp-button-brand-active-border: var(--vp-c-brand-lighter);
   --vp-button-brand-active-bg: var(--vp-c-brand);
+  --vp-c-brand-dark: var(--vp-c-brand-lighter);
   /* 标题 */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(92.06deg, #33c2ff -17.9%, #257cff 43.39%, #165dff 99.4%);
