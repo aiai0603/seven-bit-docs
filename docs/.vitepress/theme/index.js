@@ -4,7 +4,6 @@ import sbui from 'seven-bit-ui';
 import "prismjs/themes/prism-coy.min.css";
 import CodeBox from '../components/CodeBox.vue';
 import Antd from 'ant-design-vue';
-import 'ant-design-vue/dist/antd.css';
 
 
 export default {
