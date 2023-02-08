@@ -1,15 +1,25 @@
 #!/usr/bin/env sh
 
+# 忽略错误
 set -e
 
-pnpm run docs:build
+# 构建
+npm run docs:build
 
-cd ./.vitepress/dist
+# 进入待发布的目录
+cd docs/.vitepress/dist
+
+# 如果是发布到自定义域名
+# echo 'www.example.com' > CNAME
 
 git init
 git add -A
-git commit -m 'deploy seven-bit-ui docs'
+git commit -m 'deploy'
 
-git push -f git@github.com:ox4f5da2/seven-bit-docs.git master:page
+# 如果部署到 https://<USERNAME>.github.io
+git push -f git@github.com:aiai0603/aiai0603.github.io.git master
+
+# 如果是部署到 https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
 cd -

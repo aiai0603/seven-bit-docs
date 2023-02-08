@@ -1,13 +1,14 @@
 import { markdownConfig } from './plugins/code-plugin';
 import guide from './utils/guide.js';
 import general from './utils/general.js';
+import layout from './utils/layout.js';
 import feedback from './utils/feedback.js';
 import dataEntry from './utils/dataEntry.js';
 import dataDisplay from './utils/dataDisplay.js';
 
 module.exports = {
-  base: "/seven-bit-ui/",
-  lastUpdated:'上次更新时间',
+  base: "/",
+  lastUpdated: '上次更新时间',
   markdown: {
     config: markdownConfig
   },
@@ -26,7 +27,7 @@ module.exports = {
     socialLinks: [{ icon: 'github', link: 'https://github.com/aiai0603' }],
     sidebar: {
       '/guide/': guide,
-      '/examples/': [general, feedback, dataEntry, dataDisplay]
+      '/examples/': [general, layout, feedback, dataEntry, dataDisplay]
     },
     footer: {
       message: 'Released under the MIT License.',
