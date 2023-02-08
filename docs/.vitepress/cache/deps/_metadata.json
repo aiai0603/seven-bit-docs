@@ -1,17 +1,17 @@
 {
-  "hash": "8076aef7",
-  "browserHash": "e4cc45a6",
+  "hash": "cd022263",
+  "browserHash": "cb820ebc",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "9d09162e",
+      "fileHash": "0de65727",
       "needsInterop": false
     },
     "seven-bit-ui": {
       "src": "../../../../node_modules/.pnpm/seven-bit-ui@1.0.15/node_modules/seven-bit-ui/es/index.js",
       "file": "seven-bit-ui.js",
-      "fileHash": "499d3c9e",
+      "fileHash": "87396c9b",
       "needsInterop": false
     }
   },

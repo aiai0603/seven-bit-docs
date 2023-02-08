@@ -1,6 +1,8 @@
 import { markdownConfig } from './plugins/code-plugin';
 
 module.exports = {
+  base: "/seven-bit-ui/",
+  cleanUrls: true,
   markdown: {
     config: markdownConfig
   },
@@ -9,7 +11,6 @@ module.exports = {
       'link', { rel: 'icon', href: '/logo.svg' }
     ]
   ],
-  base: "/seven-bi-docs/",
   themeConfig: {
     siteTitle: 'Seven-Bit-UI',
     logo: '/logo.svg',
