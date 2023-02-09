@@ -1,13 +1,13 @@
 const dataDisplay = {
-  text: '数据展示',
+  text: "数据展示",
   collapsible: true,
   collapsed: false,
   items: [
-    // {
-    //   text: 'Button 按钮',
-    //   link: '/examples/button/'
-    // },
-  ]
-}
+    {
+      text: "Avatar 头像",
+      link: "/examples/avatar/",
+    },
+  ],
+};
 
 export default dataDisplay;
