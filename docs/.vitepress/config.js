@@ -1,12 +1,13 @@
 import { markdownConfig } from './plugins/code-plugin';
 import guide from './utils/guide.js';
 import general from './utils/general.js';
+import layout from './utils/layout.js';
 import feedback from './utils/feedback.js';
 import dataEntry from './utils/dataEntry.js';
 import dataDisplay from './utils/dataDisplay.js';
 
 module.exports = {
-  base: "/seven-bit-ui/",
+  base: "/",
   lastUpdated: true,
   markdown: {
     config: markdownConfig
@@ -28,7 +29,7 @@ module.exports = {
     socialLinks: [{ icon: 'github', link: 'https://github.com/aiai0603' }],
     sidebar: {
       '/guide/': guide,
-      '/examples/': [general, feedback, dataEntry, dataDisplay]
+      '/examples/': [general, layout, feedback, dataEntry, dataDisplay]
     },
     footer: {
       message: '在第五届青训营的契机下，本组件库由 Seven 团队协作完成开发并遵守 <a href="https://github.com/ox4f5da2/seven-bit-docs/blob/master/LICENSE">MIT 许可证</a>',

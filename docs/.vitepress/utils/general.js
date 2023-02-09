@@ -4,11 +4,11 @@ const general = {
   collapsed: false,
   items: [
     {
-      text: 'Button 按钮',
+      text: '按钮 Button',
       link: '/examples/button/'
     },
     {
-      text: 'Link 按钮',
+      text: '链接 Link',
       link: '/examples/link/'
     }
   ]
