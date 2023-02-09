@@ -43,3 +43,20 @@ const color: LinearGradient[]= [......];
 
 :::code progress/progress6.vue
 :::
+
+## API
+### `<progress>` Props
+| 参数名       | 描述               | 类型                                          | 默认值     |
+| :----------- | :----------------- | :-------------------------------------------- | :--------- |
+| type         | 进度条的类型       | `'line' | 'circle'`                           | `'line'`   |
+| size         | 进度条的大小       | `'small' \| 'medium' \| 'large'`                | `'medium'` |
+| percent      | 进度条当前的百分比 | `number`                                      | `0`        |
+| stroke-width | 进度条的线宽       | `number`                                      | `-`        |
+| width        | 进度条的长度       | `number \| string`                             | `-`        |
+| color        | 进度条的颜色       | `string \| array`                              | `-`        |
+| track-color  | 进度条的轨道颜色   | `string`                                      | `-`        |
+| show-text    | 是否显示文字       | `boolean`                                     | `true`     |
+| status       | 进度条状态         | `'normal' \| 'success' \| 'warning' \| 'danger'` | `-`        |
+| round        | 进度条是否有圆角   | `boolean`                                     | `true`     |
+
+

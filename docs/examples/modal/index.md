@@ -48,19 +48,19 @@
 | 参数名                | 描述                                               | 类型                                                | 默认值     |
 | :-------------------- | :------------------------------------------------- | :-------------------------------------------------- | :--------- |
 | visible **(v-model)** | 对话框是否可见                                     | `boolean`                                           | `false`    |
-| width                 | 对话框的宽度（单位px）                             | `number | string`                                   | `520`      |
-| top                   | 对话框的距离顶部的高度，居中显示开启的情况下不生效 | `number | 'center'`                                 | `-`        |
+| width                 | 对话框的宽度（单位px）                             | `number \| string`                                   | `520`      |
+| top                   | 对话框的距离顶部的高度，居中显示开启的情况下不生效 | `number \| 'center'`                                 | `-`        |
 | mask                  | 是否显示遮罩层                                     | `boolean`                                           | `true`     |
 | title                 | 标题                                               | `string`                                            | `-`        |
-| title-align           | 标题的水平对齐方向                                 | `'start' | 'center'`                                | `'center'` |
+| title-align           | 标题的水平对齐方向                                 | `'start' \| 'center'`                                | `'center'` |
 | content               | 对话框内容                                         | `string`                                            | `-`        |
-| icon-type             | 标题前的图标类型                                   | `'none' | 'info' | 'success' | 'warning' | 'error'` | `'none'`   |
+| icon-type             | 标题前的图标类型                                   | `'none' \| 'info' \| 'success' \| 'warning' \| 'error'` | `'none'`   |
 | mask-closable         | 是否点击遮罩层可以关闭对话框                       | `boolean`                                           | `true`     |
 | hide-cancel           | 是否隐藏取消按钮                                   | `boolean`                                           | `false`    |
 | simple                | 是否开启简单模式                                   | `boolean`                                           | `false`    |
 | closable              | 是否显示关闭按钮                                   | `boolean`                                           | `true`     |
-| ok-text               | 确认按钮的内容                                     | `string`                                            | `确定`     |
-| cancel-text           | 取消按钮的内容                                     | `string`                                            | `取消`     |
+| ok-text               | 确认按钮的内容                                     | `string`                                            | `'确定'`     |
+| cancel-text           | 取消按钮的内容                                     | `string`                                            | `'取消'`     |
 | ok-button-props       | 确认按钮的Props，见 `Button` 的相关配置            | `object`                                            | `-`        |
 | cancel-button-props   | 取消按钮的Props，见 `Button` 的相关配置            | `object`                                            | `-`        |
 | footer                | 是否展示页脚部分                                   | `boolean`                                           | `true`     |

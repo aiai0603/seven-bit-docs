@@ -7,7 +7,7 @@ import dataDisplay from './utils/dataDisplay.js';
 
 module.exports = {
   base: "/seven-bit-ui/",
-  lastUpdated:'上次更新时间',
+  lastUpdated: true,
   markdown: {
     config: markdownConfig
   },
@@ -19,9 +19,11 @@ module.exports = {
   themeConfig: {
     siteTitle: 'Seven-Bit-UI',
     logo: '/logo.svg',
+    lastUpdatedText: '最近更新',
+    outlineTitle: '页面目录',
     nav: [
-      { text: '指南', link: '/guide/start' },
-      { text: '组件', link: '/examples/button/' }
+      { text: '开发指南', link: '/guide/start' },
+      { text: '组件使用', link: '/examples/button/' }
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/aiai0603' }],
     sidebar: {
@@ -29,8 +31,16 @@ module.exports = {
       '/examples/': [general, feedback, dataEntry, dataDisplay]
     },
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-present Seven'
+      message: '在第五届青训营的契机下，本组件库由 Seven 团队协作完成开发并遵守 <a href="https://github.com/ox4f5da2/seven-bit-docs/blob/master/LICENSE">MIT 许可证</a>',
+      copyright: 'Copyright © 2023-现在 Seven'
+    },
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
+    editLink: {
+      pattern: 'https://github.com/ox4f5da2/seven-bit-docs/tree/master/docs/:path',
+      text: '在 GitHub 上编辑此页面'
     }
   }
 };
