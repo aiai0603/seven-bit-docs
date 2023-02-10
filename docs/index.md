@@ -17,7 +17,7 @@ hero:
       link: /guide/start
     - theme: alt
       text: 在 Github 上查看
-      link: https://github.com/aiai0603/ls-ui
+      link: https://github.com/aiai0603/seven-bit-ui
 
 features:
   - icon: 🎉

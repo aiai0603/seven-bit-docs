@@ -1,4 +1,4 @@
-const general = {
+const layout = {
   text: '布局组件',
   collapsible: true,
   collapsed: false,
@@ -14,4 +14,4 @@ const general = {
   ]
 };
 
-export default general;
+export default layout;

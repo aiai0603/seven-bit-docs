@@ -5,6 +5,7 @@ import layout from './utils/layout.js';
 import feedback from './utils/feedback.js';
 import dataEntry from './utils/dataEntry.js';
 import dataDisplay from './utils/dataDisplay.js';
+import router from './utils/router.js';
 
 module.exports = {
   base: "/",
@@ -31,7 +32,7 @@ module.exports = {
     socialLinks: [{ icon: 'github', link: 'https://github.com/aiai0603' }],
     sidebar: {
       '/guide/': guide,
-      '/examples/': [general, layout, feedback, dataEntry, dataDisplay]
+      '/examples/': [general, layout, feedback, dataEntry, dataDisplay, router]
     },
     footer: {
       message: '在第五届青训营的契机下，本组件库由 Seven 团队协作完成开发并遵守 <a href="https://github.com/ox4f5da2/seven-bit-docs/blob/master/LICENSE">MIT 许可证</a>',
