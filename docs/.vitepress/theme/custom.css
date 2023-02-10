@@ -18,9 +18,17 @@
 }
 
 /* 表格的样式覆盖 */
-table {
-  width: 100%;
+.vp-doc[class~="_guide_start"] table th,
+.vp-doc[class~="_guide_start"] table td {
+  min-width: 130px;
+}
+
+.vp-doc:not([class~="_guide_start"]) table {
   border: 1px solid #e5e6ec;
+}
+
+.vp-doc table {
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -37,53 +45,52 @@ table {
   background-color: #f2f3f5;
 }
 
+.dark .vp-doc table {
+  border-color: #484849;
+}
 .dark .vp-doc thead th {
   color: #f6f6f6;
   background-color: #2e2e30;
 }
 
-.vp-doc thead th {
-  color: rgb(29, 33, 41);
-}
-
-.vp-doc tbody td:first-child {
+.vp-doc:not([class~="_guide_start"]) tbody td:first-child {
   width: 150px;
 }
 
-.vp-doc tbody td:nth-child(2) {
+.vp-doc:not([class~="_guide_start"]) tbody td:nth-child(2) {
   width: 70%;
 }
 
-.vp-doc tbody td:nth-child(3) {
+.vp-doc:not([class~="_guide_start"]) tbody td:nth-child(3) {
   min-width: 200px;
 }
 
-.vp-doc tbody td:last-child {
+.vp-doc:not([class~="_guide_start"]) tbody td:last-child {
   min-width: 100px;
 }
 
-.vp-doc tbody td:nth-child(3),
-.vp-doc tbody td:nth-child(4),
-.vp-doc tbody td:nth-child(3) code,
-.vp-doc tbody td:nth-child(4) code {
+.vp-doc:not([class~="_guide_start"]) tbody td:nth-child(3),
+.vp-doc:not([class~="_guide_start"]) tbody td:nth-child(4),
+.vp-doc:not([class~="_guide_start"]) tbody td:nth-child(3) code,
+.vp-doc:not([class~="_guide_start"]) tbody td:nth-child(4) code {
   color: #3c7eff;
   background-color: transparent;
 }
 
-.vp-doc tbody tr:hover {
+.vp-doc:not([class~="_guide_start"]) tbody tr:hover {
   background-color: #f7f8fa;
 }
 
-.dark .vp-doc tbody tr:hover {
+.dark .vp-doc:not([class~="_guide_start"]) tbody tr:hover {
   background-color: #202023;
 }
 
-.vp-doc tr:nth-child(2n) {
+.vp-doc:not([class~="_guide_start"]) tr:nth-child(2n) {
   background-color: transparent;
 }
 
-.vp-doc td,
-.vp-doc th {
+.vp-doc:not([class~="_guide_start"]) td,
+.vp-doc:not([class~="_guide_start"]) th {
   border: none;
 }
 
@@ -106,7 +113,27 @@ table {
   transform: translateX(1em);
 }
 
-/* 页脚的样式覆盖 */
-.VPFooter .message a:hover {
-  color: #257cff;
+.VPDocAsideOutline nav a.outline-link.active {
+  color: var(--vp-c-brand);
 }
+
+.VPDocAsideOutline nav .outline-link:hover {
+  color: rgb(15, 15, 16, 0.92);
+}
+
+.VPDocAsideOutline nav ul {
+  -webkit-padding-start: 0px;
+  padding-inline-start: 0px;
+  list-style: none;
+  margin-top: 0;
+}
+
+.VPDocAsideOutline .outline-marker {
+  width: 4px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* 页脚的样式覆盖 */
+  .VPFooter .message a:hover {
+    color: #257cff;
+  }
