@@ -3,10 +3,10 @@ const dataEntry = {
   collapsible: true,
   collapsed: false,
   items: [
-    // {
-    //   text: 'Button 按钮',
-    //   link: '/examples/button/'
-    // },
+    {
+      text: 'Switch 开关',
+      link: '/examples/switch/'
+    },
   ]
 }
 
