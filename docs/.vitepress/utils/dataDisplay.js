@@ -4,8 +4,16 @@ const dataDisplay = {
   collapsed: false,
   items: [
     {
-      text: "Avatar 头像",
+      text: "头像 Avatar",
       link: "/examples/avatar/",
+    },
+    {
+      text: "表格 Table",
+      link: "/examples/table/",
+    },
+    {
+      text: "卡片 Card",
+      link: "/examples/card/",
     },
   ],
 };
