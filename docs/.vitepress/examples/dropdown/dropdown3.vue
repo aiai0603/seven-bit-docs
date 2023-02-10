@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <sb-drop-down :maxHeight="50">
+    <sb-drop-down :maxHeight="50" trigger="click">
       <template #title> 最高50px </template>
       <template #dropdown>
         <sb-drop-down-menu title="菜单组1">

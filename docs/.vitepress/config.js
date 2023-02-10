@@ -10,6 +10,7 @@ import router from './utils/router.js';
 module.exports = {
   base: "/",
   lastUpdated: true,
+  titleTemplate:"Seven-Bit-UI",
   markdown: {
     config: markdownConfig
   },

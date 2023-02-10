@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <sb-drop-down style="margin-right:20px">
-      <template #title> 点击展开 </template>
+      <template #title> 悬停展开 </template>
       <template #dropdown>
         <sb-drop-down-item value="1">菜单1</sb-drop-down-item>
         <sb-drop-down-item value="2">菜单2</sb-drop-down-item>

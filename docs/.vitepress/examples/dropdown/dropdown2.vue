@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <sb-drop-down style="margin-right:20px">
+    <sb-drop-down trigger="click" style="margin-right:20px">
       <template #title> 点击展开 </template>
       <template #dropdown>
         <sb-drop-down-item value="1">菜单1</sb-drop-down-item>
