@@ -11,6 +11,7 @@
       <a-timeline-item color="#165dff">2023/2/7 下午10:16:43 发布了 1.0.16 版本 支持 Layout 、BackTop 和 Card 组件</a-timeline-item>
       <a-timeline-item color="#165dff">2023/2/8 下午10:01:22 发布了 1.0.18 版本 支持 Drawer 和 Alert 组件，修复了 SSR 环境下图标引入失败的问题</a-timeline-item>
       <a-timeline-item color="#165dff">2023/2/9 下午9:46:58 发布了 1.0.22 版本 支持 Switch 组件，修复了样式冲突问题</a-timeline-item>
+      <a-timeline-item color="#165dff">2023/2/9 下午7:55:27 发布了 1.1.1 版本 支持 Table 组件，修复了 DropDwon 组件 hover 问题，Switch 组件样式错乱问题</a-timeline-item>
 
     </a-timeline>
   </div>
