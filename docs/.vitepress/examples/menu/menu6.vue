@@ -21,7 +21,7 @@
             </sb-menu-item>
           </template>
           <sb-menu-item value="3-2">测试5</sb-menu-item>
-          <sb-sub-menu :defaultOpen="true" keys="3-3">
+          <sb-sub-menu keys="3-3">
             <template #title>
               <sb-menu-item> 测试1 </sb-menu-item>
             </template>
