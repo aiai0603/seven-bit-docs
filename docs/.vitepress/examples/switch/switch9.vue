@@ -8,6 +8,15 @@
     </template>
   </sb-switch>
 
+  <sb-switch v-model:checked="checked" size="small">
+    <template #checked-icon>
+      <sb-icon name="check"></sb-icon>
+    </template>
+    <template #unchecked-icon>
+      <sb-icon name="close"></sb-icon>
+    </template>
+  </sb-switch>
+
   <sb-switch v-model:checked="checked" type="round">
     <template #checked-icon>
       <sb-icon name="check"></sb-icon>
@@ -17,7 +26,25 @@
     </template>
   </sb-switch>
 
+  <sb-switch v-model:checked="checked" type="round" size="small">
+    <template #checked-icon>
+      <sb-icon name="check"></sb-icon>
+    </template>
+    <template #unchecked-icon>
+      <sb-icon name="close"></sb-icon>
+    </template>
+  </sb-switch>
+
   <sb-switch v-model:checked="checked" type="line">
+    <template #checked-icon>
+      <sb-icon name="check"></sb-icon>
+    </template>
+    <template #unchecked-icon>
+      <sb-icon name="close"></sb-icon>
+    </template>
+  </sb-switch>
+
+  <sb-switch v-model:checked="checked" type="line" size="small">
     <template #checked-icon>
       <sb-icon name="check"></sb-icon>
     </template>

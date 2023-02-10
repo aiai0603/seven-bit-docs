@@ -24,7 +24,9 @@
 
 :::code switch/switch4.vue
 :::
-
+::: tip ⭐️ 温馨提示
+开关处于禁用状态时不可点击
+:::
 ## 自定义开关的颜色
 通过 `checked-color` 和 `unchecked-color` 可以自定义开关的颜色。
 
@@ -35,6 +37,10 @@
 设置 beforeChange 函数，函数的返回值将用于判断是否阻止切换。
 
 :::code switch/switch6.vue
+:::
+
+::: tip ⭐️ 温馨提示
+可以打开控制台查看具体效果哦
 :::
 
 ## 加载中状态
@@ -55,3 +61,31 @@
 
 :::code switch/switch9.vue
 :::
+
+## API
+### `<switch>` Props
+| 参数名                | 描述                                                         | 类型                                                         | 默认值     |
+| :-------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :--------- |
+| checked **(v-model)** | 绑定值                                                       | `boolean`                                                    | `-`        |
+| disabled              | 是否禁用                                                     | `boolean`                                                    | `false`    |
+| loading               | 是否为加载中状态                                             | `boolean`                                                    | `false`    |
+| type                  | 开关的类型                                                   | `'circle' \| 'round' \| 'line'`                                | `'circle'` |
+| size                  | 开关的大小                                                   | `'small' \| 'medium'`                                         | `'medium'` |
+| checked-color         | 选中时的开关颜色                                             | `string`                                                     | `-`        |
+| unchecked-color       | 未选中时的开关颜色                                           | `string`                                                     | `-`        |
+| before-change         | switch 状态改变前的钩子， 返回 false 或者返回 Promise 且被 reject 则停止切换。 | `( newValue: string ) => Promise<boolean \| void> \| boolean \| void` | `-`        |
+
+### `<switch>` Events
+
+| 事件名 | 描述         | 参数                                           |
+| :----- | :----------- | :--------------------------------------------- |
+| change | 值改变时触发 | value: `boolean` |
+
+### `<switch>` Slots
+
+| 插槽名         | 描述                                                      | 参数 |
+| :------------- | :-------------------------------------------------------- | :--- |
+| checked-icon   | 打开状态时，按钮上的图标                                  | -    |
+| unchecked-icon | 关闭状态时，按钮上的图标                                  | -    |
+| checked        | 打开状态时的文案（`type='line'`和`size='small'`时不生效） | -    |
+| unchecked      | 关闭状态时的文案（`type='line'`和`size='small'`时不生效） | -    |

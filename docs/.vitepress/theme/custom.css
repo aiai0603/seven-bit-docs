@@ -45,6 +45,9 @@
   background-color: #f2f3f5;
 }
 
+.dark .vp-doc table {
+  border-color: #484849;
+}
 .dark .vp-doc thead th {
   color: #f6f6f6;
   background-color: #2e2e30;

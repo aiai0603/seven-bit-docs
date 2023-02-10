@@ -8,7 +8,9 @@ import dataDisplay from './utils/dataDisplay.js';
 
 module.exports = {
   base: "/",
+  title: 'Seven-Bit-UI',
   lastUpdated: true,
+  cleanUrls: true,
   markdown: {
     config: markdownConfig
   },
