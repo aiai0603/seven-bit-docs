@@ -4,7 +4,7 @@
       <div class="sb-col">
         <sb-alert v-model:visible="visible1" @click="handleClose(visible1)" closable>
           <template #close-element>
-            asdf
+            ABCD
           </template>
           This is an info alert.
         </sb-alert>
