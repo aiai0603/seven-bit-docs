@@ -8,14 +8,12 @@
       </sb-drawer>
       <sb-button @click="handleClick">Open Drawer</sb-button>
   </div>
-
-
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-const visible = ref(false)
 
+const visible = ref(false)
 const handleClick = () => {
   visible.value = true;
 };
