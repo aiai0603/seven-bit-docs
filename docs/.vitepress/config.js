@@ -45,6 +45,11 @@ module.exports = {
     editLink: {
       pattern: 'https://github.com/ox4f5da2/seven-bit-docs/tree/master/docs/:path',
       text: '在 GitHub 上编辑此页面'
+    },
+    algolia: {
+      appId: 'VOQM00VJF7',
+      apiKey: '3352cbbb277659119baffeb118392a33',
+      indexName: 'aiai0603io',
     }
   }
 };
