@@ -18,6 +18,13 @@ const feedback = {
     {
       text: '进度条 Progress',
       link: '/examples/progress/'
+    },{
+      text: '抽屉 Drawer',
+      link: '/examples/drawer/'
+    },
+    {
+      text: '警告提示 Alert',
+      link: '/examples/alert/'
     }
   ]
 };
