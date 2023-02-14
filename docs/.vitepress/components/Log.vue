@@ -47,6 +47,10 @@
         支持 Table 组件，修复了 DropDwon 组件 hover 问题，Switch
         组件样式错乱问题</a-timeline-item
       >
+      <a-timeline-item color="#165dff"
+        >2023/2/13 下午9:43:12 发布了 1.1.3 版本<br />
+        支持 Image 组件，修复了 Draw 组件 Zindex 问题</a-timeline-item
+      >
     </a-timeline>
   </div>
 </template>
