@@ -7,6 +7,10 @@ const dataEntry = {
       text: 'Switch 开关',
       link: '/examples/switch/'
     },
+    {
+      text: 'Input 输入框',
+      link: '/examples/input/'
+    }
   ]
 }
 
