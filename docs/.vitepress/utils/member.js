@@ -50,7 +50,7 @@ const members = [
     ],
   },{
     avatar: 'https://avatars.githubusercontent.com/u/82374719?s=400&u=ce6b30081c345410a4eba9ba110cb8787b1838ac&v=4', // 头像地址
-    name: '张文晋 🤡', // 名字
+    name: '张文晋 👏', // 名字
     title: '组员', // 职务
     org: '反馈组件', // 负责的部分
     orgLink: 'examples/drawer/', // 文档内的链接
