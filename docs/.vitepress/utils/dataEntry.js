@@ -10,7 +10,11 @@ const dataEntry = {
     {
       text: 'Input 输入框',
       link: '/examples/input/'
-    }
+    },
+    {
+      text: 'Upload 上传',
+      link: '/examples/upload/'
+    },
   ]
 }
 

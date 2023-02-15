@@ -58,6 +58,17 @@ const members = [
     links: [ // 相关链接
       { icon: 'github', link: 'https://github.com/Lemonadeccc' },
     ]
+  },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/122533444?s=400&u=7c870ae658c134297fe0d13623cd158cf361c723&v=4', // 头像地址
+    name: '边浩东 😃', // 名字
+    title: '组长', // 职务
+    org: '数据录入组件', // 负责的部分
+    orgLink: 'examples/input/', // 文档内的链接
+    desc: '负责数据录入组件中的 Input、Upload 组件的开发', // 自我介绍
+    links: [ // 相关链接
+      { icon: 'github', link: 'https://github.com/bhdgogogo' },
+    ]
   }
 ];
 
