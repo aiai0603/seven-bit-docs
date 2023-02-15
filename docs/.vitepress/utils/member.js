@@ -54,7 +54,7 @@ const members = [
     title: '组员', // 职务
     org: '反馈组件', // 负责的部分
     orgLink: 'examples/drawer/', // 文档内的链接
-    desc: '负责反馈组件中的 Drawer、Alert 组件的开发', // 自我介绍
+    desc: '负责反馈组件中的 Drawer、Alert 组件的开发，部分说明文档和部分大项目文档编写', // 自我介绍
     links: [ // 相关链接
       { icon: 'github', link: 'https://github.com/Lemonadeccc' },
     ]
