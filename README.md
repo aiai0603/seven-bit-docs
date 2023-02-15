@@ -1,5 +1,50 @@
 # 文档编写
 
+## 项目结构目录
+```
+.
+|--docs
+|    |--.vitepress
+|    |    |--components
+|    |    |    |--CodeBox.vue            //代码块盒子
+|    |    |    |--CollapseTransition.vue
+|    |    |    └─ Log.vue
+|    |    |--examples
+|    |    |    |--alert
+|    |    |    |    |--alert1.vue    //文档展示中不同功能的代码
+|    |    |    |    |--alert2.vue    //文档展示中不同功能的代码
+|    |    |    |    ...
+|    |    |    ...
+|    |    |--plugins
+|    |    |--theme
+|    |    |--utils
+|    |    |--config.js
+|    |    ...
+|    |--examples
+|    |    |--alert/index.md    //组件说明，调用.vitepress中examples具体相应例子
+|    |    ...
+|    |--guide    //guide页面相关
+|    |--public   //assets
+|    |--index.md
+|    ..
+|--packages
+|    |--components
+|    |    |--src       //组件
+|    |    |    |--sbAlert
+|    |    |    |    |--__alert__             //测试文件
+|    |    |    |    |--style/.less           //css
+|    |    |    |    |--index 
+|    |    |    |    |--sbAlert.vue            //组件
+|    |    |    |    |--types.ts               //interface及相关const定义  
+|    |    |    |--index.ts                    //暴露
+|    |    |    ...
+|    |    ... 
+|    |--eslint-config
+|    |--utils   
+|    ...
+...
+```
+
 ## 组件文档编写
 在 `./docs/examples/*` 下建立自己编写的组件说明文档，比如编写了 `button` 组件，就创建 `button/index.md` 文件
 
