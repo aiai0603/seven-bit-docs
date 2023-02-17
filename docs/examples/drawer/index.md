@@ -47,7 +47,7 @@
 | drawerStyle           | 抽屉的样式                | `CSSProperties`                                            | `-`        |
 | on-before-ok         | 触发 ok 事件前的回调函数。如果返回 false 则不会触发后续事件，也可使用 done 进行异步关闭。    | `( done: (closed: boolean) => void) => void \| boolean \| Promise<void \| boolean>`                                           | `-`        |
 | on-before-cancel     | 触发 cancel 事件前的回调函数。如果返回 false 则不会触发后续事件 | 
-`( done: (closed: boolean) => void) => void | boolean | Promise<void | boolean>`                                            | `-`        |
+`( done: (closed: boolean) => void) => void \| boolean \| Promise<void \| boolean>`                                            | `-`        |
 | header                | 是否展示头部部分                                   | `boolean`                                           | `true`     |
 | footer                | 是否展示底部部分                                   | `boolean`                                           | `true`     |
 | hide-cancel           | 是否隐藏取消按钮                                   | `boolean`                                           | `false`     |
