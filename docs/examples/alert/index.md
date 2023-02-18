@@ -9,7 +9,7 @@
 
 
 ## 提示类型
-有 `info`，`success`，`warning`，`error` 四种类型的消息提示。`normal` 类型下默认不展示图标。
+有 `info`，`success`，`warning`，`error` 四种类型的消息提示。
 
 :::code alert/alert2.vue
 :::
